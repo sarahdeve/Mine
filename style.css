@@ -213,7 +213,7 @@ body {
     margin-bottom: 20px;
     color: #003847;
   }
-  .slideanim {visibility:hidden;}
+  /* .slideanim {visibility:hidden;} */
   .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
