@@ -197,9 +197,60 @@ body {
     border-radius: 0;
     font-family: Montserrat, sans-serif;
   }
+  .navbar-brand {
+    /* background-color: royalblue; */
+    /* margin:0px 0 0 100px; */
+  }
+  .flip-container{
+	 	perspective: 1000px;
+	 	}
+	 .flip-container:hover .flipper, .flip-container.hover .flipper{
+	 	transform: rotateY(180deg);
+	 }
+	 .flipper{
+	 	transition: .75s;
+	 	transform-style: preserve-3d;
+	 }
+ 	.flip-container, .front, .back{
+ 		/* margin-right: 20px; */
+ 		height: 350px;
+	 	width: 250px;
+	 }
+    img {
+	 	height: 100%;
+	 	width: 100%;
+	 }
+   .front, .back{
+		position: absolute;
+		left: 0;
+		top: 0;
+		text-align: center;
+		color: #fff;
+		/* padding-top:120px; */
+		font-size: 1em; 
+		backface-visibility: hidden;
+	}
+
+	.front{
+		z-index: 2;
+		background-color: teal;
+		transform: rotateY(0deg);
+	}
+
+	.back{
+		background-color: gray;
+		transform: rotateY(180deg);
+	}
+
   .navbar li a, .navbar .navbar-brand {
     color: #fff !important;
+    /* margin:100px 0 0 100px; */
+    /* background-color: royalblue; */
   }
+  /* .navbar li a, .navbar .navbar-brand .flipp {
+    background-color: royalblue;
+  } */
+
   .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #003847 !important;
     background-color: #fff !important;

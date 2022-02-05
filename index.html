@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
@@ -25,7 +27,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand flipp" href="#myPage">
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front"><img src="images/ima.jpg"></div>
+            <div class="back">
+              <p>I am a developer based in Kwara State, Nigeria focused on creating interactive digital experiences on the web.</p>
+            </div>
+          </div>
+        </div>
+        
+      </a>
+      
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -62,7 +75,7 @@
     <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="Email Address" required>
       <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
+        <button type="button" class="btn btn-danger">Search</button>
       </div>
     </div>
   </form>
@@ -176,21 +189,21 @@
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="paris.jpg" alt="Webpage" width="400" height="300">
+        <img src="" alt="Webpage" width="400" height="300">
         <p><strong>WEB</strong></p>
         <p>Yes, we built website</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="newyork.jpg" alt="Webpage" width="400" height="300">
+        <img src="" alt="Webpage" width="400" height="300">
         <p><strong>WEB</strong></p>
         <p>We built New web</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="sanfran.jpg" alt="Webpage" width="400" height="300">
+        <img src="" alt="Webpage" width="400" height="300">
         <p><strong>WEB</strong></p>
         <p>Yes, ....</p>
       </div>
@@ -305,6 +318,10 @@
     <div class="col-sm-5">
       <p>Contact me and i'll get back to you within 24 hours.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span>Ilorin, Nigeria</p>
+      <p><span class="bi bi-facebook"></span><a href="https://www.facebook.com/samsonsarah.oluwasefemi">Samson Sarah</a></p>
+      <p><span class="bi bi-instagram"></span><a href="https://www.instagram.com/zarazefe/">Zarazefe</a></p>
+      <p><span class="bi bi-github"></span><a href="https://github.com/sarahdeve">Sarahdeve</a></p>
+      <p><span class="bi bi-linkedin"></span><a href="https://www.linkedin.com/in/samson-sarah-b799161a2">Sarah Samson</a></p>
       <p><span class="glyphicon glyphicon-phone"></span> <a href="tel:08145056692">+234 8145056692</a></p>
       <p>
           <span class="glyphicon glyphicon-envelope"></span>
@@ -312,30 +329,39 @@
               <i>oluwasefemi@gmail.com</i>
         </a>
     </p>
+    <div class=""></div>
+    <br>
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
-        <form accept-charset="UTF-8"  action=""  method="POST" enctype="multipart/form-data"></form>
+        <form accept-charset="UTF-8" target="_blank"  action="https://formsubmit.co/0a9b8b8612578cd0c1c2113ca4cde51f"  method="POST" enctype="multipart/form-data">
         <!-- Disable captcha -->
-        <input type="hidden" name="_captcha" value="false">
-  
-        <input type="hidden" name="_next" value="">
-        
-        <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-            </div>
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <!-- <input type="hidden" name="_captcha" value="false"> -->
+    
+          <input type="hidden" name="_next" value="">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-sm-6">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
             </div>
           </div>
-          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-          <div class="row">
-            <div class="col-sm-12 form-group">
-              <button class="btn btn-default pull-right" type="submit">Send</button>
-            </div>
+        </div>
+        <br>
+          <div class="form-group">
+              <textarea class="form-control" id="comments" name="message" placeholder="Your Message..." rows="5"
+                required></textarea><br>
+          </div>
+            <!-- <div class="row"> -->
+              <!-- <div class="col-sm-12 form-group"> -->
+                <button class="btn btn-default pull-right" type="submit">Send</button>
+              <!-- </div> -->
+          <!-- </div> -->
          </form>
-      </div>
-    </div>
+    
     <!-- <form accept-charset="UTF-8"  action="https://formsubmit.co/713f5dce936acb53a68f90c476534cef"  method="POST" enctype="multipart/form-data">
       honeypot
       <input type="text" name="_honey" style="display: none;" id="">
@@ -362,22 +388,30 @@
 </div>
 
 
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
- 
+<footer class="container-fluid">
+  <div class="row">
+    <a class=" text-center" href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up">Backup</span>
+    </a>      
+  </div>
+  <!-- <div class="row">
+   
+  </div> -->
 <!-- <a  target="_blank" title="Contact Us On WhatsApp" href="https://api.whatsapp.com/send?phone=+919581880892&text=Hi,%20I%20would%20like%20to%20get%20more%20information.." class="whatsapplink hideweb" style="background-color:#2DC100">
     <i class="fa fa-fw fa-whatsapp" style="color:#fff"></i>
     <span style="color:#fff">
         Contact Us On WhatsApp        </span>
 </a> -->
-  <p>Webpage by Sarah  <a  target="_blank" title="Contact Us On WhatsApp" href="https://web.whatsapp.com/send?phone=+2348107729038&amp;text=Hi, I would like to get more information.." class="whatsapplink hidemobile">
+<br>
+  <p>Webpage by Sarah  
+    <a  target="_blank" title="Contact Us On WhatsApp" href="https://web.whatsapp.com/send?phone=+2348107729038&amp;text=Hi, I would like to get more information.." class="">
     <i class="fa fa-fw fa-whatsapp" style="color:#fff"></i>
+    <!-- https://web.whatsapp.com/ -->
     <span style="color: green">Contact Me On WhatsApp</span>
-</a></p>
+  </a>
+</p>
 </footer>
 
-<script src="port.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

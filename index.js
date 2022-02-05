@@ -42,3 +42,17 @@ $(document).ready(function(){
     });
   });
 })
+
+// https://api.jquery.com/jQuery.ajax
+// $.ajax({
+//     method: 'POST',
+//     url: 'https://formsubmit.co/ajax/0a9b8b8612578cd0c1c2113ca4cde51f',
+//     dataType: 'json',
+//     accepts: 'application/json',
+//     data: {
+//         name: "FormSubmit",
+//         message: "I'm from Devro LABS"
+//     },
+//     success: (data) => console.log(data),
+//     error: (err) => console.log(err)
+// });
