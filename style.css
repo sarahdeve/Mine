@@ -16,7 +16,7 @@ body {
      /* position: absolute; */
      /* transform: translate(20%, 20%); */
   }
-
+  
   span {
     display: inline-block;
     font-weight: bolder;
@@ -105,7 +105,7 @@ body {
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-    padding: 60px 50px;
+    padding: 10px 50px;
   }
   .bg-grey {
     background-color: #f6f6f6;
@@ -191,6 +191,9 @@ body {
     background-color: #003847;
     color: #fff;
   }
+  .copy-right-grids {
+    text-align: center;
+  }
   .navbar {
     margin-bottom: 0;
     background-color: #003847;
@@ -222,9 +225,10 @@ body {
   }
   footer .glyphicon {
     font-size: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     color: #003847;
   }
+
   /* .slideanim {visibility:hidden;} */
   .slide {
     animation-name: slide;
